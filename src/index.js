@@ -3,9 +3,29 @@ import ReactDOM from "react-dom";
 
 function HelloWorld() {
   return(
-    <div>Hello World!</div>
+    <div><Hello/></div>
   );
 }
+
+function Hello() {
+  // const name = "Nisse!";
+  // return (
+  //   <span>Hello {name}</span>
+  // );
+  var isHello = true;
+  return (
+    <span>
+      {isHello && "Hello"}
+      {!isHello && "Goodbye"}
+      </span>
+  )
+}
+
+// function World() {
+//   return (
+//   <span> World!</span>
+//   );
+// }
 
 // function Hello () {
 //   return React.createElement(
